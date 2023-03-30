@@ -38,24 +38,26 @@
   <div class="main">
     <div class="featured">
       <h2 class="featured__heading main__heading">Featured Posts</h2>
-      <div class="featured_flex">
+      <div class="featured__posts">
         <article class="featured__post featured__post_background-road post">
-          <a class="post post__heading" href="the-road-ahead.html"><h2 class="post_text-decoration post__heading">The road ahead</h2></a>
-          <a class="post post_text-decoration" href="the-road-ahead.html">
-            <p class="post post__text">The road ahead might be paved - it might not be.</p>
+          <a class="post__link" href="the-road-ahead.html">
+            <h2 class="post__heading">The road ahead</h2>
           </a>
-          <div class="post__footer post footer">
-            <div class="footer footer__author">
+          <a class="post__link" href="the-road-ahead.html">
+            <p class="post__text">The road ahead might be paved - it might not be.</p>
+          </a>
+          <div class="post__footer footer">
+            <div class="footer__author">
               <img class="post__image" src="images/mat_vogels.jpg" alt="William Wong">
               <span class="post__image-author">Mat Vogels</span>
             </div>
             <span class="post__image-date">September 25, 2015</span>
         </article>
-        <article class="featured__post featured__post_background-fromtop">
-          <button class="button button__adventure">ADVENTURE</button>
+        <article class="featured__post featured__post_background-fromtop post">
+          <button class="button post__button">ADVENTURE</button>
           <h2 class="post__heading">From Top Down</h2>
           <p class="post__text">Once a year, go someplace you’ve never been before.</p>
-          <div class="post__footer post footer">
+          <div class="post__footer footer">
             <div class="footer__author">
               <img class="post__image" src="images/william_wong.jpg" alt="William Wong">
               <span class="post__image-author">William Wong</span>
@@ -67,7 +69,7 @@
     <div class="most-recent">
       <h2 class="most-recent__heading main__heading">Most Recent</h2>
       <section class="most-recent__posts">
-        <article class="most-recent__post rpost "> <!--Problem-->
+        <article class="most-recent__post rpost">
           <img class="rpost__img" src="images/still_standing_tall.jpg" alt="Still Standing Tall" style="width: 100%">
           <div class="rpost__heading-text">
             <h3 class="rpost__heading">Still Stanging Tall</h3>
@@ -81,7 +83,7 @@
             <span class="rpost__span">9/25/2015</span>
           </div>
         </article>
-        <article class="most-recent__post rpost">
+        <article class="most-recent__post recent-post">
           <img class="rpost__img" src="images/sunny_side_up.jpg" alt="Sunny Side Up" style="width: 100%">
           <div class="rpost__heading-text">
             <h3 class="rpost__heading">Sunny Side Up</h3>
@@ -154,19 +156,21 @@
       </section>
     </div>
   </div>
-  <div class="intouch-basement"> <!--Problem-->
-    <h2 class="intouch__name">Stay in Touch</h2>
-    <form class="intouch__data data">
-      <input class="data__email" type="text" name="email" placeholder="Enter your email address">
-      <input class="data__submit" type="submit">
-    </form>
+  <div class="intouch-basement">
+    <div class="intouch">
+      <h2 class="intouch__name">Stay in Touch</h2>
+      <form class="intouch__data data">
+        <input class="data__email" type="text" name="email" placeholder="Enter your email address">
+        <input class="data__submit" type="submit" value="Submit">
+      </form>
+    </div>
     <footer class="basement">
       <span class="logo">Escape.</span>
-      <nav class="basement__nav"> <!--Problem-->
-        <a class="basement__nav__nav__link" href="#">HOME</a>
-        <a class="basement__nav__nav__link" href="#">CATEGORIES</a>
-        <a class="basement__nav__nav__link" href="#">ABOUT</a>
-        <a class="basement__nav__nav__link" href="#">CONTACT</a>
+      <nav class="basement__nav nav">
+        <a class="nav__nav-link" href="#">HOME</a>
+        <a class="nav__nav-link" href="#">CATEGORIES</a>
+        <a class="nav__nav-link" href="#">ABOUT</a>
+        <a class="nav__nav-link" href="#">CONTACT</a>
       </nav>
     </footer>
   </div>
